@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS + JS Animation Project</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Interactive Animation Demo</h1>
+  </header>
+
+  <main>
+  
+    <section>
+      <h2>Animated Buttons</h2>
+      <button class="animated-btn">Hover Me!</button>
+      <button id="pulseBtn">Click to Pulse</button>
+    </section>
+
+    <section>
+      <h2>Box Animation</h2>
+      <div id="animateBox"></div>
+      <button onclick="triggerBoxAnimation()">Animate Box</button>
+    </section>
+
+  
+    <section>
+      <h2>Card Flip</h2>
+      <div class="card" onclick="flipCard(this)">
+        <div class="card-inner">
+          <div class="card-front">FRONT</div>
+          <div class="card-back">BACK</div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Popup Modal</h2>
+      <button onclick="openModal()">Open Modal</button>
+      <div id="modal" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal()">&times;</span>
+          <p>This is a sliding modal with fade animation!</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
